@@ -1,4 +1,154 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KMFT Group - Professional Electrical Services">
+    <title>KMFT Group - Electrical Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #888;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .appointment-form input,
+        .payment-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .appointment-form button,
+        .payment-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .appointment-form button:hover,
+        .payment-form button:hover {
+            background-color: #555;
+        }
+        .callout-fees {
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KMFT Group - Electrical Services</h1>
+        <p>Reliable and Professional Electrical Solutions</p>
+    </header>
+
+    <nav>
+        <a href="#appointment">Appointment</a>
+        <a href="#payment">Payment</a>
+        <a href="#callout-fees">Call-Out Fees</a>
+    </nav>
+
+    <div class="container">
+        <!-- Appointment Section -->
+        <section id="appointment">
+            <h2>Schedule an Appointment</h2>
+            <form class="appointment-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Preferred Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Appointment Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payment">
+            <h2>Make a Payment</h2>
+            <form class="payment-form">
+                <label for="amount">Amount (ZAR):</label>
+                <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+
+        <!-- Call-Out Fees Section -->
+        <section id="callout-fees" class="callout-fees">
+            <h2>Our Call-Out Fees</h2>
+            <p>Our standard call-out fee is <strong>R500</strong>. This includes the initial assessment and consultation. Additional fees may apply for repairs or installations.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>KMFT Group | 123 Main Street, Cityville | Tel: +27 11 234 5678</p>
+        <p>&copy; 2025 KMFT Group. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
 
 <!--
   <<< Author notes: Course header >>>
